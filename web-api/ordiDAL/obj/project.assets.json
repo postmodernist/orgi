@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\echo_point\\Banks\\Palisade_bank\\orgi\\web-api\\orgi\\orgi.csproj",
-      "projectName": "orgi",
-      "projectPath": "D:\\echo_point\\Banks\\Palisade_bank\\orgi\\web-api\\orgi\\orgi.csproj",
+      "projectUniqueName": "D:\\echo_point\\Banks\\Palisade_bank\\orgi\\web-api\\ordiDAL\\ordiDAL.csproj",
+      "projectName": "ordiDAL",
+      "projectPath": "D:\\echo_point\\Banks\\Palisade_bank\\orgi\\web-api\\ordiDAL\\ordiDAL.csproj",
       "packagesPath": "C:\\Users\\Kafer\\.nuget\\packages\\",
-      "outputPath": "D:\\echo_point\\Banks\\Palisade_bank\\orgi\\web-api\\orgi\\obj\\",
+      "outputPath": "D:\\echo_point\\Banks\\Palisade_bank\\orgi\\web-api\\ordiDAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -67,9 +67,6 @@
           }
         ],
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }

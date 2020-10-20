@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LRdUuB1bLbdaBvOrPHJWH/neVjAZSNwSAp5jY3gS6q4aR91cE3n3ZM2DIc2qwByW/5fdCRiowWW8lKUviqZadg==",
+  "dgSpecHash": "t/Zg66IZetbWaTF6usTC4Wx/OU6a+lEgTeGlAe1Jcp+/wfcqdnV7PW19soagoY69Cud3LHqiap8ftQRf5D1cXA==",
   "success": true,
-  "projectFilePath": "D:\\echo_point\\Banks\\Palisade_bank\\orgi\\web-api\\orgi\\orgi.csproj",
+  "projectFilePath": "D:\\echo_point\\Banks\\Palisade_bank\\orgi\\web-api\\ordiDAL\\ordiDAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kafer\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
   ],
