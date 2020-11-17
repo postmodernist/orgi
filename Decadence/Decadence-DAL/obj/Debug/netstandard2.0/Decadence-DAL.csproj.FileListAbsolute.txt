@@ -1,0 +1,9 @@
+D:\dev\DevStadt\dev_stadt\Banks\Palisade\Decadence\Decadence-DAL\bin\Debug\netstandard2.0\Decadence-DAL.deps.json
+D:\dev\DevStadt\dev_stadt\Banks\Palisade\Decadence\Decadence-DAL\bin\Debug\netstandard2.0\Decadence-DAL.dll
+D:\dev\DevStadt\dev_stadt\Banks\Palisade\Decadence\Decadence-DAL\bin\Debug\netstandard2.0\Decadence-DAL.pdb
+D:\dev\DevStadt\dev_stadt\Banks\Palisade\Decadence\Decadence-DAL\obj\Debug\netstandard2.0\Decadence-DAL.csprojAssemblyReference.cache
+D:\dev\DevStadt\dev_stadt\Banks\Palisade\Decadence\Decadence-DAL\obj\Debug\netstandard2.0\Decadence-DAL.AssemblyInfoInputs.cache
+D:\dev\DevStadt\dev_stadt\Banks\Palisade\Decadence\Decadence-DAL\obj\Debug\netstandard2.0\Decadence-DAL.AssemblyInfo.cs
+D:\dev\DevStadt\dev_stadt\Banks\Palisade\Decadence\Decadence-DAL\obj\Debug\netstandard2.0\Decadence-DAL.csproj.CoreCompileInputs.cache
+D:\dev\DevStadt\dev_stadt\Banks\Palisade\Decadence\Decadence-DAL\obj\Debug\netstandard2.0\Decadence-DAL.dll
+D:\dev\DevStadt\dev_stadt\Banks\Palisade\Decadence\Decadence-DAL\obj\Debug\netstandard2.0\Decadence-DAL.pdb
