@@ -8,25 +8,23 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Kafer\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Q\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\echo_point\\Banks\\Palisade_bank\\orgi\\web-api\\orgi\\orgi.csproj",
+      "projectUniqueName": "D:\\dev\\DevStadt\\dev_stadt\\Banks\\Palisade\\orgi\\web-api\\orgi\\orgi.csproj",
       "projectName": "orgi",
-      "projectPath": "D:\\echo_point\\Banks\\Palisade_bank\\orgi\\web-api\\orgi\\orgi.csproj",
-      "packagesPath": "C:\\Users\\Kafer\\.nuget\\packages\\",
-      "outputPath": "D:\\echo_point\\Banks\\Palisade_bank\\orgi\\web-api\\orgi\\obj\\",
+      "projectPath": "D:\\dev\\DevStadt\\dev_stadt\\Banks\\Palisade\\orgi\\web-api\\orgi\\orgi.csproj",
+      "packagesPath": "C:\\Users\\Q\\.nuget\\packages\\",
+      "outputPath": "D:\\dev\\DevStadt\\dev_stadt\\Banks\\Palisade\\orgi\\web-api\\orgi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Kafer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Q\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -39,6 +37,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -50,6 +49,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -60,12 +60,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[3.1.2, 3.1.2]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -74,7 +68,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
