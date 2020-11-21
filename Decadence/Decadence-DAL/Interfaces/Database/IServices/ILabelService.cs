@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Decadence_DAL.Entities;
 
-namespace Decadence_DAL.Interfaces.Database.IServices
+namespace Decadence_DAL.Interfaces
 {
     public interface ILabelService
     {

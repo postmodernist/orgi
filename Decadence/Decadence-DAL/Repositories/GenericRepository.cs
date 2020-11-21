@@ -8,7 +8,7 @@ using System.Linq;
 
 namespace Decadence_DAL.Repositories
 {
-    class GenericRepository<TEntity>: IGenericRepository<TEntity> where TEntity: IEntity 
+    public class GenericRepository<TEntity>: IGenericRepository<TEntity> where TEntity: IEntity 
     {
         protected IConnectionFactory _connectionFactory;
         private readonly string _tableName;
@@ -19,16 +19,6 @@ namespace Decadence_DAL.Repositories
             _connectionFactory = connectionFactory;
             _tableName = tableName;
             _isSoftDelete = isSoftDelete;
-        }
-
-        public IEnumerable<TEntity> GetAll()
-        {
-            throw new NotImplementedException();
-        }
-
-        public TEntity Get(Guid id)
-        {
-            throw new NotImplementedException();
         }
 
         public Guid Add(TEntity entity)
@@ -42,6 +32,16 @@ namespace Decadence_DAL.Repositories
         }
 
         public void Delete(TEntity entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public TEntity Get(Guid id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<TEntity> GetAll()
         {
             throw new NotImplementedException();
         }

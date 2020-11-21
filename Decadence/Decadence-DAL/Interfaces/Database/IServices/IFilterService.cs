@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 using Decadence_DAL.Entities;
 
-namespace Decadence_DAL.Interfaces.Database.IServices
+namespace Decadence_DAL.Interfaces
 {
-    interface IFilterService
+    public interface IFilterService
     {
         Guid AddFilter(Filter filter);
         void UpdateFilter(Filter filter);

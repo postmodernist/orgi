@@ -1,6 +1,6 @@
 ﻿using Decadence_DAL.Entities;
 
-namespace Decadence_DAL.Interfaces.Database.IRepositories
+namespace Decadence_DAL.Interfaces
 {
     public interface IProjectRepository: IGenericRepository<Project>
     {

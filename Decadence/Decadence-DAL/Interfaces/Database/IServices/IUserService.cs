@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using Decadence_DAL.Entities;
 
-namespace Decadence_DAL.Interfaces.Database.IServices
+namespace Decadence_DAL.Interfaces
 {
-    interface IUserService
+    public interface IUserService
     {
         Guid AddUser(User user);
         void UpdateUser(User user);

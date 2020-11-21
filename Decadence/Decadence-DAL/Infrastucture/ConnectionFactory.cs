@@ -28,7 +28,7 @@ namespace Decadence_DAL.Infrastucture
 
         public void SetConnection(string connectionString)
         {
-            throw new NotImplementedException();
+            _connectionString = connectionString;
         }
     }
 }
