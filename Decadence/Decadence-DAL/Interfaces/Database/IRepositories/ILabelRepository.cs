@@ -2,7 +2,7 @@
 
 namespace Decadence_DAL.Interfaces
 {
-    interface ILabelRepository : IGenericRepository<Label>
+    public interface ILabelRepository : IGenericRepository<Label>
     {
     }
 }
