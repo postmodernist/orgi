@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\dev\\DevStadt\\dev_stadt\\Banks\\Palisade\\Decadence\\Decadence-API\\Decadence.csproj": {}
+    "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-API\\Decadence.csproj": {}
   },
   "projects": {
-    "D:\\dev\\DevStadt\\dev_stadt\\Banks\\Palisade\\Decadence\\Decadence-API\\Decadence.csproj": {
+    "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-API\\Decadence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\dev\\DevStadt\\dev_stadt\\Banks\\Palisade\\Decadence\\Decadence-API\\Decadence.csproj",
+        "projectUniqueName": "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-API\\Decadence.csproj",
         "projectName": "Decadence",
-        "projectPath": "D:\\dev\\DevStadt\\dev_stadt\\Banks\\Palisade\\Decadence\\Decadence-API\\Decadence.csproj",
-        "packagesPath": "C:\\Users\\Q\\.nuget\\packages\\",
-        "outputPath": "D:\\dev\\DevStadt\\dev_stadt\\Banks\\Palisade\\Decadence\\Decadence-API\\obj\\",
+        "projectPath": "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-API\\Decadence.csproj",
+        "packagesPath": "C:\\Users\\CR\\.nuget\\packages\\",
+        "outputPath": "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Q\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\CR\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],

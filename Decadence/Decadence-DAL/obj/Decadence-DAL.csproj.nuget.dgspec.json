@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\dev\\DevStadt\\dev_stadt\\Banks\\Palisade\\Decadence\\Decadence-DAL\\Decadence-DAL.csproj": {}
+    "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-DAL\\Decadence-DAL.csproj": {}
   },
   "projects": {
-    "D:\\dev\\DevStadt\\dev_stadt\\Banks\\Palisade\\Decadence\\Decadence-DAL\\Decadence-DAL.csproj": {
+    "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-DAL\\Decadence-DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\dev\\DevStadt\\dev_stadt\\Banks\\Palisade\\Decadence\\Decadence-DAL\\Decadence-DAL.csproj",
+        "projectUniqueName": "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-DAL\\Decadence-DAL.csproj",
         "projectName": "Decadence-DAL",
-        "projectPath": "D:\\dev\\DevStadt\\dev_stadt\\Banks\\Palisade\\Decadence\\Decadence-DAL\\Decadence-DAL.csproj",
-        "packagesPath": "C:\\Users\\Q\\.nuget\\packages\\",
-        "outputPath": "D:\\dev\\DevStadt\\dev_stadt\\Banks\\Palisade\\Decadence\\Decadence-DAL\\obj\\",
+        "projectPath": "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-DAL\\Decadence-DAL.csproj",
+        "packagesPath": "C:\\Users\\CR\\.nuget\\packages\\",
+        "outputPath": "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Q\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\CR\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -46,7 +46,7 @@
           "dependencies": {
             "Dapper": {
               "target": "Package",
-              "version": "[2.0.35, )"
+              "version": "[2.0.78, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XD91mm7cq6cgU9jeuaVWgJ5ojWITWbA+gkHDYEKlBAzWSFm5wx+O72W8zF5hGggX/mQrtrKQmRVoqfTe40R3/A==",
+  "dgSpecHash": "J8cI+kGnGCzEsns7yzuOBFS/MOUOtoAtCiXmHCMMvtgXCio8kuVupQCyzWM2tUJCFTUTa/oR+p5Ti9yUM2CdCw==",
   "success": true,
-  "projectFilePath": "D:\\dev\\DevStadt\\dev_stadt\\Banks\\Palisade\\orgi\\web-api\\orgi\\orgi.csproj",
+  "projectFilePath": "D:\\Banks\\DEV\\orgi\\web-api\\orgi\\orgi.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

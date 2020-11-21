@@ -8,23 +8,23 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Q\\.nuget\\packages\\": {},
+    "C:\\Users\\CR\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\dev\\DevStadt\\dev_stadt\\Banks\\Palisade\\orgi\\web-api\\ordiDAL\\ordiDAL.csproj",
+      "projectUniqueName": "D:\\Banks\\DEV\\orgi\\web-api\\ordiDAL\\ordiDAL.csproj",
       "projectName": "ordiDAL",
-      "projectPath": "D:\\dev\\DevStadt\\dev_stadt\\Banks\\Palisade\\orgi\\web-api\\ordiDAL\\ordiDAL.csproj",
-      "packagesPath": "C:\\Users\\Q\\.nuget\\packages\\",
-      "outputPath": "D:\\dev\\DevStadt\\dev_stadt\\Banks\\Palisade\\orgi\\web-api\\ordiDAL\\obj\\",
+      "projectPath": "D:\\Banks\\DEV\\orgi\\web-api\\ordiDAL\\ordiDAL.csproj",
+      "packagesPath": "C:\\Users\\CR\\.nuget\\packages\\",
+      "outputPath": "D:\\Banks\\DEV\\orgi\\web-api\\ordiDAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Q\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\CR\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],

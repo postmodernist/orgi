@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "H91BEkulqyIsUHKdHSkhWmEW51wFvKzy8lWFl1byHqi6Ej2Ff7imcEn3CRJPoI3v1IwNVmzM+Se/s6YGFUmzFA==",
+  "dgSpecHash": "XyM1f0ov2UB01bIeJZx/5fMokMJxHTtLwfuFqvwHJYGUYg/WHxvIXvHLGTsvo+9f7qY++1jVtKGHumnwiowBCw==",
   "success": true,
-  "projectFilePath": "D:\\dev\\DevStadt\\dev_stadt\\Banks\\Palisade\\orgi\\web-api\\ordiDAL\\ordiDAL.csproj",
+  "projectFilePath": "D:\\Banks\\DEV\\orgi\\web-api\\ordiDAL\\ordiDAL.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
