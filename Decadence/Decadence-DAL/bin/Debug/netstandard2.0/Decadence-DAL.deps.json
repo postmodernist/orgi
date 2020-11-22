@@ -9,11 +9,7 @@
     ".NETStandard,Version=v2.0/": {
       "Decadence-DAL/1.0.0": {
         "dependencies": {
-<<<<<<< Updated upstream
           "Dapper": "2.0.78",
-=======
-          "Dapper": "2.0.35",
->>>>>>> Stashed changes
           "NETStandard.Library": "2.0.3",
           "System.Configuration.ConfigurationManager": "5.0.0",
           "System.Data.SqlClient": "4.8.2",
@@ -23,22 +19,14 @@
           "Decadence-DAL.dll": {}
         }
       },
-<<<<<<< Updated upstream
       "Dapper/2.0.78": {
-=======
-      "Dapper/2.0.35": {
->>>>>>> Stashed changes
         "dependencies": {
           "System.Reflection.Emit.Lightweight": "4.7.0"
         },
         "runtime": {
           "lib/netstandard2.0/Dapper.dll": {
             "assemblyVersion": "2.0.0.0",
-<<<<<<< Updated upstream
             "fileVersion": "2.0.78.45418"
-=======
-            "fileVersion": "2.0.35.21366"
->>>>>>> Stashed changes
           }
         }
       },
@@ -276,21 +264,12 @@
       "serviceable": false,
       "sha512": ""
     },
-<<<<<<< Updated upstream
     "Dapper/2.0.78": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-vLPwL2HZXp/DN17Eu7sg6GMEj02alq7jcy6atn5Gv8i96b9Hu1UoxlCrhInUPfSFLQQiD8O7pdWAE1fdUEO/1Q==",
       "path": "dapper/2.0.78",
       "hashPath": "dapper.2.0.78.nupkg.sha512"
-=======
-    "Dapper/2.0.35": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-/xAgd8BO8EDnJ0sURWEV8LptHHvTKxoYiT63YUF2U/yWE2VyUCqR2jcrtEyNngT9Kjzppecz95UKiBla3PnR7g==",
-      "path": "dapper/2.0.35",
-      "hashPath": "dapper.2.0.35.nupkg.sha512"
->>>>>>> Stashed changes
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",

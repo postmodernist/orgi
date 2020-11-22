@@ -1,19 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< Updated upstream
-    "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-API\\Decadence.csproj": {}
-  },
-  "projects": {
-    "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-API\\Decadence.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-API\\Decadence.csproj",
-        "projectName": "Decadence",
-        "projectPath": "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-API\\Decadence.csproj",
-        "packagesPath": "C:\\Users\\CR\\.nuget\\packages\\",
-        "outputPath": "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-API\\obj\\",
-=======
     "C:\\Users\\Нейромонах\\Documents\\GitHub\\orgi\\Decadence\\Decadence-API\\Decadence.csproj": {}
   },
   "projects": {
@@ -25,18 +12,13 @@
         "projectPath": "C:\\Users\\Нейромонах\\Documents\\GitHub\\orgi\\Decadence\\Decadence-API\\Decadence.csproj",
         "packagesPath": "C:\\Users\\Нейромонах\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Нейромонах\\Documents\\GitHub\\orgi\\Decadence\\Decadence-API\\obj\\",
->>>>>>> Stashed changes
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-<<<<<<< Updated upstream
-          "C:\\Users\\CR\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
           "C:\\Users\\Нейромонах\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> Stashed changes
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -51,8 +33,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-DAL\\Decadence-DAL.csproj": {
-                "projectPath": "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-DAL\\Decadence-DAL.csproj"
+              "C:\\Users\\Нейромонах\\Documents\\GitHub\\orgi\\Decadence\\Decadence-DAL\\Decadence-DAL.csproj": {
+                "projectPath": "C:\\Users\\Нейромонах\\Documents\\GitHub\\orgi\\Decadence\\Decadence-DAL\\Decadence-DAL.csproj"
               }
             }
           }
@@ -112,20 +94,21 @@
         }
       }
     },
-    "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-DAL\\Decadence-DAL.csproj": {
+    "C:\\Users\\Нейромонах\\Documents\\GitHub\\orgi\\Decadence\\Decadence-DAL\\Decadence-DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-DAL\\Decadence-DAL.csproj",
+        "projectUniqueName": "C:\\Users\\Нейромонах\\Documents\\GitHub\\orgi\\Decadence\\Decadence-DAL\\Decadence-DAL.csproj",
         "projectName": "Decadence-DAL",
-        "projectPath": "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-DAL\\Decadence-DAL.csproj",
-        "packagesPath": "C:\\Users\\CR\\.nuget\\packages\\",
-        "outputPath": "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-DAL\\obj\\",
+        "projectPath": "C:\\Users\\Нейромонах\\Documents\\GitHub\\orgi\\Decadence\\Decadence-DAL\\Decadence-DAL.csproj",
+        "packagesPath": "C:\\Users\\Нейромонах\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Нейромонах\\Documents\\GitHub\\orgi\\Decadence\\Decadence-DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\CR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Нейромонах\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],

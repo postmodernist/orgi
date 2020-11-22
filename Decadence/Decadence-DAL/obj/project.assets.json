@@ -382,7 +382,6 @@
       "path": "netstandard.library/2.0.3",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "build/netstandard2.0/NETStandard.Library.targets",
@@ -526,7 +525,6 @@
       "path": "runtime.win-arm64.runtime.native.system.data.sqlclient.sni/4.4.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
@@ -542,7 +540,6 @@
       "path": "runtime.win-x64.runtime.native.system.data.sqlclient.sni/4.4.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
@@ -558,7 +555,6 @@
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
@@ -1171,42 +1167,25 @@
     ]
   },
   "packageFolders": {
-<<<<<<< Updated upstream
-    "C:\\Users\\CR\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
-=======
     "C:\\Users\\Нейромонах\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
->>>>>>> Stashed changes
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< Updated upstream
-      "projectUniqueName": "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-DAL\\Decadence-DAL.csproj",
-      "projectName": "Decadence-DAL",
-      "projectPath": "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-DAL\\Decadence-DAL.csproj",
-      "packagesPath": "C:\\Users\\CR\\.nuget\\packages\\",
-      "outputPath": "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-DAL\\obj\\",
-=======
       "projectUniqueName": "C:\\Users\\Нейромонах\\Documents\\GitHub\\orgi\\Decadence\\Decadence-DAL\\Decadence-DAL.csproj",
       "projectName": "Decadence-DAL",
       "projectPath": "C:\\Users\\Нейромонах\\Documents\\GitHub\\orgi\\Decadence\\Decadence-DAL\\Decadence-DAL.csproj",
       "packagesPath": "C:\\Users\\Нейромонах\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Нейромонах\\Documents\\GitHub\\orgi\\Decadence\\Decadence-DAL\\obj\\",
->>>>>>> Stashed changes
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-<<<<<<< Updated upstream
-        "C:\\Users\\CR\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
         "C:\\Users\\Нейромонах\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> Stashed changes
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
