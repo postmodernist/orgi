@@ -1369,25 +1369,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Нейромонах\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\CR\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Нейромонах\\Documents\\GitHub\\orgi\\Decadence\\Decadence-API\\Decadence.csproj",
+      "projectUniqueName": "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-API\\Decadence.csproj",
       "projectName": "Decadence",
-      "projectPath": "C:\\Users\\Нейромонах\\Documents\\GitHub\\orgi\\Decadence\\Decadence-API\\Decadence.csproj",
-      "packagesPath": "C:\\Users\\Нейромонах\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Нейромонах\\Documents\\GitHub\\orgi\\Decadence\\Decadence-API\\obj\\",
+      "projectPath": "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-API\\Decadence.csproj",
+      "packagesPath": "C:\\Users\\CR\\.nuget\\packages\\",
+      "outputPath": "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Нейромонах\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\CR\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1402,8 +1400,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Нейромонах\\Documents\\GitHub\\orgi\\Decadence\\Decadence-DAL\\Decadence-DAL.csproj": {
-              "projectPath": "C:\\Users\\Нейромонах\\Documents\\GitHub\\orgi\\Decadence\\Decadence-DAL\\Decadence-DAL.csproj"
+            "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-DAL\\Decadence-DAL.csproj": {
+              "projectPath": "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-DAL\\Decadence-DAL.csproj"
             }
           }
         }

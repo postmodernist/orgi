@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using Decadence_DAL.Entities;
+﻿using Decadence_DAL.Entities;
 using Decadence_DAL.Interfaces;
+using System;
+using System.Collections.Generic;
 
 namespace Decadence_DAL.Services
 {
-    public class LabelService: ILabelService
+    public class LabelService : ILabelService
     {
         IUnitOfWork _unitOfWork;
 
@@ -14,7 +14,7 @@ namespace Decadence_DAL.Services
             _unitOfWork = unitOfWork;
         }
 
-        public Guid AddLabel(Label label)
+        public int AddLabel(Label label)
         {
             return _unitOfWork.LabelRepository.Add(label);
         }
@@ -29,7 +29,7 @@ namespace Decadence_DAL.Services
             _unitOfWork.LabelRepository.Delete(label);
         }
 
-        public Label GetLabelById(Guid id)
+        public Label GetLabelById(int id)
         {
             return _unitOfWork.LabelRepository.Get(id);
         }

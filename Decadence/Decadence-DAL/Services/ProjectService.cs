@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using Decadence_DAL.Entities;
+﻿using Decadence_DAL.Entities;
 using Decadence_DAL.Interfaces;
+using System;
+using System.Collections.Generic;
 
 namespace Decadence_DAL.Services
 {
-    public class ProjectService: IProjectService
+    public class ProjectService : IProjectService
     {
         IUnitOfWork _unitOfWork;
 
@@ -13,7 +13,7 @@ namespace Decadence_DAL.Services
         {
             _unitOfWork = unitOfWork;
         }
-        public Guid AddProject(Project project)
+        public int AddProject(Project project)
         {
             return _unitOfWork.ProjectRepository.Add(project);
         }
@@ -28,7 +28,7 @@ namespace Decadence_DAL.Services
             _unitOfWork.ProjectRepository.Delete(project);
         }
 
-        public Project GetProjectById(Guid id)
+        public Project GetProjectById(int id)
         {
             return _unitOfWork.ProjectRepository.Get(id);
         }

@@ -1,11 +1,11 @@
-﻿using System;
-using Decadence_DAL.Interfaces;
+﻿using Decadence_DAL.Interfaces;
+using System;
 
 namespace Decadence_DAL.Entities
 {
     public class Label : IEntity
     {
-        public Guid Id { get; set; }
+        public int  Id { get; set; }
         public string Name { get; set; }
         public string Triger { get; set; }
     }

@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using Decadence_DAL.Entities;
+﻿using Decadence_DAL.Entities;
 using Decadence_DAL.Interfaces;
+using System;
+using System.Collections.Generic;
 
 namespace Decadence_DAL.Services
 {
-    public class WorkItemService: IWorkItemService
+    public class WorkItemService : IWorkItemService
     {
         IUnitOfWork _unitOfWork;
 
@@ -14,7 +14,7 @@ namespace Decadence_DAL.Services
             _unitOfWork = unitOfWork;
         }
 
-        public Guid AddWorkItem(WorkItem item)
+        public int AddWorkItem(WorkItem item)
         {
             return _unitOfWork.WorkItemRepository.Add(item);
         }
@@ -29,7 +29,7 @@ namespace Decadence_DAL.Services
             _unitOfWork.WorkItemRepository.Delete(item);
         }
 
-        public WorkItem GetWorkItemById(Guid id)
+        public WorkItem GetWorkItemById(int id)
         {
             return _unitOfWork.WorkItemRepository.Get(id);
         }

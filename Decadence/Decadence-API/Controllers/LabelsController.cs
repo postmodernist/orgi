@@ -1,10 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Decadence_DAL.Entities;
+using Decadence_DAL.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Decadence_DAL.Entities;
-using Decadence_DAL.Interfaces;
 
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -30,14 +28,14 @@ namespace Decadence.Controllers
 
         // GET api/<LabelsController>/5
         [HttpGet("{id}")]
-        public Label Get(Guid id)
+        public Label Get(int id)
         {
             return _labelService.GetLabelById(id);
         }
 
         // POST api/<LabelsController>
         [HttpPost]
-        public Guid Post([FromBody] Label label)
+        public int Post([FromBody] Label label)
         {
             return _labelService.AddLabel(label);
         }

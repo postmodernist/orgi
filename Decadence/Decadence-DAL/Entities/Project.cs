@@ -1,12 +1,12 @@
-﻿using System;
+﻿using Decadence_DAL.Interfaces;
+using System;
 using System.Collections.Generic;
-using Decadence_DAL.Interfaces;
 
 namespace Decadence_DAL.Entities
 {
-    public class Project: IEntity
-    { 
-        public Guid Id { get; set; }
+    public class Project : IEntity
+    {
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public string ColorMarker { get; set; }

@@ -1,10 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Decadence_DAL.Entities;
+using Decadence_DAL.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Decadence_DAL.Interfaces;
-using Decadence_DAL.Entities;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -28,15 +26,16 @@ namespace Decadence.Controllers
         }
 
         // GET api/<FiltersController>/5
-        [HttpGet]
-        public Filter Get(Guid id)
+        [HttpGet("{id}")]
+
+        public Filter Get(int id)
         {
             return _filterService.GetFilterById(id);
         }
 
         // POST api/<FiltersController>
         [HttpPost]
-        public Guid Post([FromBody] Filter filter)
+        public int Post([FromBody] Filter filter)
         {
             return _filterService.AddFilter(filter);
         }

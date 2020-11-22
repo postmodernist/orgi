@@ -2,7 +2,7 @@
 
 namespace Decadence_DAL.Interfaces
 {
-    public interface IWorkItemRepository: IGenericRepository<WorkItem>
+    public interface IWorkItemRepository : IGenericRepository<WorkItem>
     {
 
     }

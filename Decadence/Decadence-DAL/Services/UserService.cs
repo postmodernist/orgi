@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using Decadence_DAL.Entities;
+﻿using Decadence_DAL.Entities;
 using Decadence_DAL.Interfaces;
+using System;
+using System.Collections.Generic;
 
 namespace Decadence_DAL.Services
 {
-    public class UserService: IUserService
+    public class UserService : IUserService
     {
         IUnitOfWork _unitOfWork;
 
@@ -14,7 +14,7 @@ namespace Decadence_DAL.Services
             _unitOfWork = unitOfWork;
         }
 
-        public Guid AddUser(User user)
+        public int AddUser(User user)
         {
             return _unitOfWork.UserRepository.Add(user);
         }
@@ -29,7 +29,7 @@ namespace Decadence_DAL.Services
             _unitOfWork.UserRepository.Delete(user);
         }
 
-        public User GetUserById(Guid id)
+        public User GetUserById(int id)
         {
             return _unitOfWork.UserRepository.Get(id);
         }

@@ -1,15 +1,15 @@
-﻿using System;
+﻿using Decadence_DAL.Entities;
+using System;
 using System.Collections.Generic;
-using Decadence_DAL.Entities;
 
 namespace Decadence_DAL.Interfaces
 {
     public interface IProjectService
     {
-        Guid AddProject(Project project);
+        int AddProject(Project project);
         void UpdateProject(Project project);
         void DeleteProject(Project project);
-        Project GetProjectById(Guid id);
+        Project GetProjectById(int id);
         IEnumerable<Project> GetAllProjects();
     }
 }

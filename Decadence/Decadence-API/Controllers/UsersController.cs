@@ -1,10 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Decadence_DAL.Entities;
+using Decadence_DAL.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Decadence_DAL.Interfaces;
-using Decadence_DAL.Entities;
 
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -30,14 +28,14 @@ namespace Decadence.Controllers
 
         // GET api/<UsersController>/5
         [HttpGet("{id}")]
-        public User Get(Guid id)
+        public User Get(int id)
         {
             return _userService.GetUserById(id);
         }
 
         // POST api/<UsersController>
         [HttpPost]
-        public Guid Post([FromBody] User user)
+        public int Post([FromBody] User user)
         {
             return _userService.AddUser(user);
         }

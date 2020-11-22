@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Decadence_DAL.Services
 {
-    public class FilterService: IFilterService
+    public class FilterService : IFilterService
     {
         IUnitOfWork _unitOfWork;
         public FilterService(IUnitOfWork unitOfWork)
@@ -13,7 +13,7 @@ namespace Decadence_DAL.Services
             _unitOfWork = unitOfWork;
         }
 
-        public Guid AddFilter(Filter filter)
+        public int AddFilter(Filter filter)
         {
             return _unitOfWork.FilterRepository.Add(filter);
         }
@@ -28,7 +28,7 @@ namespace Decadence_DAL.Services
             return _unitOfWork.FilterRepository.GetAll();
         }
 
-        public Filter GetFilterById(Guid id)
+        public Filter GetFilterById(int id)
         {
             return _unitOfWork.FilterRepository.Get(id);
         }

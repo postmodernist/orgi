@@ -2,7 +2,7 @@
 
 namespace Decadence_DAL.Interfaces
 {
-    public interface IProjectRepository: IGenericRepository<Project>
+    public interface IProjectRepository : IGenericRepository<Project>
     {
 
     }

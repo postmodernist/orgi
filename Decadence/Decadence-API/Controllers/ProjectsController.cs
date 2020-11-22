@@ -1,10 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Decadence_DAL.Entities;
+using Decadence_DAL.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Decadence_DAL.Interfaces;
-using Decadence_DAL.Entities;
 
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -29,14 +27,14 @@ namespace Decadence.Controllers
 
         // GET api/<ProjectsController>/5
         [HttpGet("{id}")]
-        public Project Get(Guid id)
+        public Project Get(int id)
         {
             return _service.GetProjectById(id);
         }
 
         // POST api/<ProjectsController>
         [HttpPost]
-        public Guid Post([FromBody] Project project)
+        public int Post([FromBody] Project project)
         {
             return _service.AddProject(project);
         }

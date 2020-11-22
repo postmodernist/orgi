@@ -11,7 +11,7 @@ namespace Decadence_DAL.UnitOfWork
         private readonly IUserRepository _UserRepository;
         private readonly IWorkItemRepository _WorkItemRepository;
 
-        public UnitOfWork(IFilterRepository filterRepository, ILabelRepository labelRepository, 
+        public UnitOfWork(IFilterRepository filterRepository, ILabelRepository labelRepository,
             IProjectRepository projectRepository, IUserRepository userRepository,
             IWorkItemRepository workItemRepository)
         {
@@ -26,7 +26,7 @@ namespace Decadence_DAL.UnitOfWork
         {
             get
             {
-                return  _FilterRepository;
+                return _FilterRepository;
             }
         }
 
