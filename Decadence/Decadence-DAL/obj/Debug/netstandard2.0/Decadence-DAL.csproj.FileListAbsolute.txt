@@ -7,6 +7,7 @@ D:\dev\DevStadt\dev_stadt\Banks\Palisade\Decadence\Decadence-DAL\obj\Debug\netst
 D:\dev\DevStadt\dev_stadt\Banks\Palisade\Decadence\Decadence-DAL\obj\Debug\netstandard2.0\Decadence-DAL.csproj.CoreCompileInputs.cache
 D:\dev\DevStadt\dev_stadt\Banks\Palisade\Decadence\Decadence-DAL\obj\Debug\netstandard2.0\Decadence-DAL.dll
 D:\dev\DevStadt\dev_stadt\Banks\Palisade\Decadence\Decadence-DAL\obj\Debug\netstandard2.0\Decadence-DAL.pdb
+<<<<<<< Updated upstream
 D:\Banks\Space\orgi\Decadence\Decadence-DAL\bin\Debug\netstandard2.0\Decadence-DAL.deps.json
 D:\Banks\Space\orgi\Decadence\Decadence-DAL\bin\Debug\netstandard2.0\Decadence-DAL.dll
 D:\Banks\Space\orgi\Decadence\Decadence-DAL\bin\Debug\netstandard2.0\Decadence-DAL.pdb
@@ -29,3 +30,14 @@ D:\Banks\Space\orgi\Decadence\Decadence-DAL\bin\Debug\netstandard2.0\Microsoft.E
 D:\Banks\Space\orgi\Decadence\Decadence-DAL\bin\Debug\netstandard2.0\Microsoft.Extensions.Configuration.xml
 D:\Banks\Space\orgi\Decadence\Decadence-DAL\bin\Debug\netstandard2.0\Microsoft.Extensions.Primitives.xml
 D:\Banks\Space\orgi\Decadence\Decadence-DAL\obj\Debug\netstandard2.0\Decadence-DAL.csproj.CopyComplete
+=======
+C:\Users\Нейромонах\Documents\GitHub\orgi\Decadence\Decadence-DAL\bin\Debug\netstandard2.0\Decadence-DAL.deps.json
+C:\Users\Нейромонах\Documents\GitHub\orgi\Decadence\Decadence-DAL\bin\Debug\netstandard2.0\Decadence-DAL.dll
+C:\Users\Нейромонах\Documents\GitHub\orgi\Decadence\Decadence-DAL\bin\Debug\netstandard2.0\Decadence-DAL.pdb
+C:\Users\Нейромонах\Documents\GitHub\orgi\Decadence\Decadence-DAL\obj\Debug\netstandard2.0\Decadence-DAL.csprojAssemblyReference.cache
+C:\Users\Нейромонах\Documents\GitHub\orgi\Decadence\Decadence-DAL\obj\Debug\netstandard2.0\Decadence-DAL.AssemblyInfoInputs.cache
+C:\Users\Нейромонах\Documents\GitHub\orgi\Decadence\Decadence-DAL\obj\Debug\netstandard2.0\Decadence-DAL.AssemblyInfo.cs
+C:\Users\Нейромонах\Documents\GitHub\orgi\Decadence\Decadence-DAL\obj\Debug\netstandard2.0\Decadence-DAL.csproj.CoreCompileInputs.cache
+C:\Users\Нейромонах\Documents\GitHub\orgi\Decadence\Decadence-DAL\obj\Debug\netstandard2.0\Decadence-DAL.dll
+C:\Users\Нейромонах\Documents\GitHub\orgi\Decadence\Decadence-DAL\obj\Debug\netstandard2.0\Decadence-DAL.pdb
+>>>>>>> Stashed changes

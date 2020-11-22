@@ -25,8 +25,12 @@
     ".NETCoreApp,Version=v5.0": {
       "Decadence/1.0.0": {
         "dependencies": {
+<<<<<<< Updated upstream
           "Dapper": "2.0.78",
           "Decadence-DAL": "1.0.0",
+=======
+          "Dapper": "2.0.35",
+>>>>>>> Stashed changes
           "Microsoft.AspNetCore.Authentication.JwtBearer": "5.0.0",
           "Microsoft.AspNetCore.Authentication.OpenIdConnect": "5.0.0",
           "Swashbuckle.AspNetCore": "5.6.3",
@@ -241,7 +245,7 @@
           "System.Reflection": "5.0.0.0",
           "System.Reflection.Emit": "5.0.0.0",
           "System.Reflection.Emit.ILGeneration": "5.0.0.0",
-          "System.Reflection.Emit.Lightweight": "5.0.0.0",
+          "System.Reflection.Emit.Lightweight.Reference": "5.0.0.0",
           "System.Reflection.Extensions": "5.0.0.0",
           "System.Reflection.Metadata": "5.0.0.0",
           "System.Reflection.Primitives": "5.0.0.0",
@@ -321,6 +325,7 @@
           "Decadence.dll": {}
         }
       },
+<<<<<<< Updated upstream
       "Dapper/2.0.78": {
         "runtime": {
           "lib/net5.0/Dapper.dll": {
@@ -330,6 +335,20 @@
         },
         "compile": {
           "lib/net5.0/Dapper.dll": {}
+=======
+      "Dapper/2.0.35": {
+        "dependencies": {
+          "System.Reflection.Emit.Lightweight": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Dapper.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.35.21366"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Dapper.dll": {}
+>>>>>>> Stashed changes
         }
       },
       "Microsoft.AspNetCore.Authentication.JwtBearer/5.0.0": {
@@ -605,12 +624,16 @@
           "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll": {}
         }
       },
+<<<<<<< Updated upstream
       "System.Security.AccessControl/5.0.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "5.0.0",
           "System.Security.Principal.Windows": "5.0.0"
         }
       },
+=======
+      "System.Reflection.Emit.Lightweight/4.7.0": {},
+>>>>>>> Stashed changes
       "System.Security.Cryptography.Cng/4.5.0": {},
       "System.Security.Cryptography.ProtectedData/5.0.0": {
         "runtime": {
@@ -1919,7 +1942,7 @@
         },
         "compileOnly": true
       },
-      "System.Reflection.Emit.Lightweight/5.0.0.0": {
+      "System.Reflection.Emit.Lightweight.Reference/5.0.0.0": {
         "compile": {
           "System.Reflection.Emit.Lightweight.dll": {}
         },
@@ -2359,12 +2382,21 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< Updated upstream
     "Dapper/2.0.78": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-vLPwL2HZXp/DN17Eu7sg6GMEj02alq7jcy6atn5Gv8i96b9Hu1UoxlCrhInUPfSFLQQiD8O7pdWAE1fdUEO/1Q==",
       "path": "dapper/2.0.78",
       "hashPath": "dapper.2.0.78.nupkg.sha512"
+=======
+    "Dapper/2.0.35": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/xAgd8BO8EDnJ0sURWEV8LptHHvTKxoYiT63YUF2U/yWE2VyUCqR2jcrtEyNngT9Kjzppecz95UKiBla3PnR7g==",
+      "path": "dapper/2.0.35",
+      "hashPath": "dapper.2.0.35.nupkg.sha512"
+>>>>>>> Stashed changes
     },
     "Microsoft.AspNetCore.Authentication.JwtBearer/5.0.0": {
       "type": "package",
@@ -2541,12 +2573,21 @@
       "path": "system.identitymodel.tokens.jwt/6.7.1",
       "hashPath": "system.identitymodel.tokens.jwt.6.7.1.nupkg.sha512"
     },
+<<<<<<< Updated upstream
     "System.Security.AccessControl/5.0.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-dagJ1mHZO3Ani8GH0PHpPEe/oYO+rVdbQjvjJkBRNQkX4t0r1iaeGn8+/ybkSLEan3/slM0t59SVdHzuHf2jmw==",
       "path": "system.security.accesscontrol/5.0.0",
       "hashPath": "system.security.accesscontrol.5.0.0.nupkg.sha512"
+=======
+    "System.Reflection.Emit.Lightweight/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-a4OLB4IITxAXJeV74MDx49Oq2+PsF6Sml54XAFv+2RyWwtDBcabzoxiiJRhdhx+gaohLh4hEGCLQyBozXoQPqA==",
+      "path": "system.reflection.emit.lightweight/4.7.0",
+      "hashPath": "system.reflection.emit.lightweight.4.7.0.nupkg.sha512"
+>>>>>>> Stashed changes
     },
     "System.Security.Cryptography.Cng/4.5.0": {
       "type": "package",
@@ -3643,7 +3684,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.Reflection.Emit.Lightweight/5.0.0.0": {
+    "System.Reflection.Emit.Lightweight.Reference/5.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

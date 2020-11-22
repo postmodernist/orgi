@@ -1372,23 +1372,42 @@
     ]
   },
   "packageFolders": {
+<<<<<<< Updated upstream
     "C:\\Users\\CR\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+=======
+    "C:\\Users\\Нейромонах\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+>>>>>>> Stashed changes
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< Updated upstream
       "projectUniqueName": "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-API\\Decadence.csproj",
       "projectName": "Decadence",
       "projectPath": "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-API\\Decadence.csproj",
       "packagesPath": "C:\\Users\\CR\\.nuget\\packages\\",
       "outputPath": "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-API\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\Нейромонах\\Documents\\GitHub\\orgi\\Decadence\\Decadence-API\\Decadence.csproj",
+      "projectName": "Decadence",
+      "projectPath": "C:\\Users\\Нейромонах\\Documents\\GitHub\\orgi\\Decadence\\Decadence-API\\Decadence.csproj",
+      "packagesPath": "C:\\Users\\Нейромонах\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Нейромонах\\Documents\\GitHub\\orgi\\Decadence\\Decadence-API\\obj\\",
+>>>>>>> Stashed changes
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
+<<<<<<< Updated upstream
         "C:\\Users\\CR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\Нейромонах\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> Stashed changes
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
