@@ -27,10 +27,10 @@ namespace Decadence
         {
 
             services.AddControllers();
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Decadence", Version = "v1" });
-            });
+            //services.AddSwaggerGen(c =>
+            //{
+            //    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Decadence", Version = "v1" });
+            //});
 
             #region Repositories
             services.AddTransient<IUserRepository, UserRepository>();
@@ -59,8 +59,8 @@ namespace Decadence
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Decadence v1"));
+                //app.UseSwagger();
+                //app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Decadence v1"));
             }
 
             app.UseHttpsRedirection();
