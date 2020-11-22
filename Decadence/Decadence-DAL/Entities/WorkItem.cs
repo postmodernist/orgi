@@ -11,7 +11,7 @@ namespace Decadence_DAL.Entities
         public string Comment { get; set; }     //Nullable
         public DateTime ScheduleDay { get; set; } // Nullable
         public DateTime CreatedAt { get; set; }
-        public Label Label { get; set; } //Nullable
-        public WorkItem SubTask { get; set; } //Nullable
+        public Guid ProjectId { get; set; } //Nullable
+        public Guid SubTaskId { get; set; } //Nullable
     }
 }

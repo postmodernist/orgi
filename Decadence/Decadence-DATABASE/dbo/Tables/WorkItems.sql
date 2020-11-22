@@ -1,0 +1,10 @@
+CREATE TABLE [dbo].[WorkItems](
+	[Id] UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
+	[Name] NVARCHAR (50),
+	[Priority] NVARCHAR(7),
+	[Comment] NVARCHAR(15),
+	[ScheduleDay] DATETIME,
+	[CreatedAt] DATETIME,
+	[ProjectId] UNIQUEIDENTIFIER ,
+	[SubTaskId] UNIQUEIDENTIFIER
+);

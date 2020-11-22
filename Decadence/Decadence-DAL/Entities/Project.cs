@@ -13,6 +13,5 @@ namespace Decadence_DAL.Entities
         public bool isFavorite { get; set; }
         public string DisplayAs { get; set; }
         public ICollection<WorkItem> Tasks { get; set; }
-        public Project SubProject { get; set; }
     }
 }
