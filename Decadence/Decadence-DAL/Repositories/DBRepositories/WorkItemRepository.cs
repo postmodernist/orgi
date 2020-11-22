@@ -2,7 +2,7 @@
 using Decadence_DAL.Entities;
 using Decadence_DAL.Interfaces;
 
-namespace Decadence_DAL.Repositories.DBRepositories
+namespace Decadence_DAL.Repositories
 {
     public class WorkItemRepository: GenericRepository<WorkItem>, IWorkItemRepository
     {

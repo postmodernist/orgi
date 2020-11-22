@@ -5,7 +5,7 @@ using Decadence_DAL.Interfaces;
 
 namespace Decadence_DAL.Services
 {
-    public class ProjectService: IProjectRepository
+    public class ProjectService: IProjectService
     {
         IUnitOfWork _unitOfWork;
 
@@ -13,27 +13,27 @@ namespace Decadence_DAL.Services
         {
             _unitOfWork = unitOfWork;
         }
-        public Guid Add(Project project)
+        public Guid AddProject(Project project)
         {
             return _unitOfWork.ProjectRepository.Add(project);
         }
 
-        public void Update(Project project)
+        public void UpdateProject(Project project)
         {
             _unitOfWork.ProjectRepository.Update(project);
         }
 
-        public void Delete(Project project)
+        public void DeleteProject(Project project)
         {
             _unitOfWork.ProjectRepository.Delete(project);
         }
 
-        public Project Get(Guid id)
+        public Project GetProjectById(Guid id)
         {
             return _unitOfWork.ProjectRepository.Get(id);
         }
 
-        public IEnumerable<Project> GetAll()
+        public IEnumerable<Project> GetAllProjects()
         {
             return _unitOfWork.ProjectRepository.GetAll();
         }

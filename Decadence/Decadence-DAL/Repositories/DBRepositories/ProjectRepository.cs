@@ -1,8 +1,8 @@
 ﻿using Decadence_DAL.Entities;
 using Decadence_DAL.Interfaces;
-using Decadence_DAL.Interfaces.Database.IRepositories;
 
-namespace Decadence_DAL.Repositories.DBRepositories
+
+namespace Decadence_DAL.Repositories
 {
     public class ProjectRepository: GenericRepository<Project>, IProjectRepository
     {
