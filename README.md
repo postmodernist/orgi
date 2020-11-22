@@ -3,5 +3,5 @@
 Decadence (ASP.NET WEB API)
  - Dapper
  - Swagger
- - JWTBearer
  
+![notbug](notbug.jpg)
