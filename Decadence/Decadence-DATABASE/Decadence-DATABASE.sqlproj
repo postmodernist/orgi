@@ -66,7 +66,7 @@
     <Build Include="dbo\Tables\Projects.sql" />
     <Build Include="dbo\Tables\Users.sql" />
     <Build Include="dbo\Tables\WorkItems.sql" />
-    <Build Include="dbo\Stored Procedures\GetAllRecordsFromTable.sql" />
-    <Build Include="dbo\Stored Procedures\DeleteRecordFromTable.sql" />
+    <Build Include="dbo\Stored Procedures\SP_GetAllRecordsFromTable.sql" />
+    <Build Include="dbo\Stored Procedures\SP_DeleteRecordFromTable.sql" />
   </ItemGroup>
 </Project>
