@@ -8,7 +8,7 @@ namespace Decadence_DAL.Repositories
     {
         public UserRepository(IConnectionFactory connectionFactory) : base(connectionFactory, "Users", false)
         {
-            connectionFactory.SetConnection("Server=192.168.56.101;Database=Decadence;User ID=sa;Password=bravoSIX_RED");
+            connectionFactory.SetConnection("Data Source=34.65.147.0;Initial Catalog=FortBoyar;Persist Security Info=True;User ID=SA;Password=bravoSIX_RED");
         }
     }
 }

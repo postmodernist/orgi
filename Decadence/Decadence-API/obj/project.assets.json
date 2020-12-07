@@ -1369,23 +1369,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\CR\\.nuget\\packages\\": {},
+    "C:\\Users\\Rutfark\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-API\\Decadence.csproj",
+      "projectUniqueName": "C:\\Users\\Rutfark\\Documents\\GitHub\\orgi\\Decadence\\Decadence-API\\Decadence.csproj",
       "projectName": "Decadence",
-      "projectPath": "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-API\\Decadence.csproj",
-      "packagesPath": "C:\\Users\\CR\\.nuget\\packages\\",
-      "outputPath": "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-API\\obj\\",
+      "projectPath": "C:\\Users\\Rutfark\\Documents\\GitHub\\orgi\\Decadence\\Decadence-API\\Decadence.csproj",
+      "packagesPath": "C:\\Users\\Rutfark\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Rutfark\\Documents\\GitHub\\orgi\\Decadence\\Decadence-API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\CR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Rutfark\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1400,8 +1400,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-DAL\\Decadence-DAL.csproj": {
-              "projectPath": "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-DAL\\Decadence-DAL.csproj"
+            "C:\\Users\\Rutfark\\Documents\\GitHub\\orgi\\Decadence\\Decadence-DAL\\Decadence-DAL.csproj": {
+              "projectPath": "C:\\Users\\Rutfark\\Documents\\GitHub\\orgi\\Decadence\\Decadence-DAL\\Decadence-DAL.csproj"
             }
           }
         }

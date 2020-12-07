@@ -6,6 +6,6 @@ namespace DecadenceV2_DAL.Entities
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public string Trigger { get; set; }
+        public string Triger { get; set; }
     }
 }

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-DAL\\Decadence-DAL.csproj": {}
+    "C:\\Users\\Rutfark\\Documents\\GitHub\\orgi\\Decadence\\Decadence-DAL\\Decadence-DAL.csproj": {}
   },
   "projects": {
-    "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-DAL\\Decadence-DAL.csproj": {
+    "C:\\Users\\Rutfark\\Documents\\GitHub\\orgi\\Decadence\\Decadence-DAL\\Decadence-DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-DAL\\Decadence-DAL.csproj",
+        "projectUniqueName": "C:\\Users\\Rutfark\\Documents\\GitHub\\orgi\\Decadence\\Decadence-DAL\\Decadence-DAL.csproj",
         "projectName": "Decadence-DAL",
-        "projectPath": "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-DAL\\Decadence-DAL.csproj",
-        "packagesPath": "C:\\Users\\CR\\.nuget\\packages\\",
-        "outputPath": "D:\\Banks\\Space\\orgi\\Decadence\\Decadence-DAL\\obj\\",
+        "projectPath": "C:\\Users\\Rutfark\\Documents\\GitHub\\orgi\\Decadence\\Decadence-DAL\\Decadence-DAL.csproj",
+        "packagesPath": "C:\\Users\\Rutfark\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rutfark\\Documents\\GitHub\\orgi\\Decadence\\Decadence-DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\CR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Rutfark\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
