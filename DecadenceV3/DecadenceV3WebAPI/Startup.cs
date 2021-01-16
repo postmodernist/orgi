@@ -11,11 +11,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Decadence_V2.AuthModels;
-using DecadenceV2_1_DAL.UnitOfWork;
+using DecadenceV3DAL.UnitOfWork;
 using Microsoft.EntityFrameworkCore;
 
-namespace Decadence_V2
+namespace DecadenceV3WebAPI
 {
     public class Startup
     {
@@ -33,15 +32,11 @@ namespace Decadence_V2
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Decadence_V2", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "DecadenceV3WebAPI", Version = "v1" });
             });
             string connection = Configuration.GetConnectionString("DefaultConnection");
-            services.AddDbContext<AppDataContext>(options =>
+            services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(connection));
-            services.AddIdentityServer()
-                .AddDeveloperSigningCredential()
-                .AddInMemoryApiResources(Config.GetApiResources())
-                .AddInMemoryClients(Config.GetClients());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -51,7 +46,7 @@ namespace Decadence_V2
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Decadence_V2 v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "DecadenceV3WebAPI v1"));
             }
 
             app.UseHttpsRedirection();
@@ -59,7 +54,6 @@ namespace Decadence_V2
             app.UseRouting();
 
             app.UseAuthorization();
-            app.UseAuthentication();
 
             app.UseEndpoints(endpoints =>
             {
