@@ -45,14 +45,14 @@ namespace DecadenceV3WebAPI.Controllers
         }
 
         // PUT api/<UsersController>/5
-        [HttpPut("{id}")]
+        [HttpPut]
         public void Put([FromBody] UserDto user)
         {
             _userService.UpdateUser(user);
         }
 
         // DELETE api/<UsersController>/5
-        [HttpDelete("{id}")]
+        [HttpDelete]
         public void Delete(UserDto user)
         {
             _userService.DeleteUser(user);

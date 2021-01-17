@@ -45,14 +45,14 @@ namespace DecadenceV3WebAPI.Controllers
         }
 
         // PUT api/<LabelsController>/5
-        [HttpPut("{id}")]
+        [HttpPut]
         public void Put([FromBody] LabelDto label)
         {
             _labelService.UpdateLabel(label);
         }
 
         // DELETE api/<LabelsController>/5
-        [HttpDelete("{id}")]
+        [HttpDelete]
         public void Delete(LabelDto label)
         {
             _labelService.DeleteLabel(label);

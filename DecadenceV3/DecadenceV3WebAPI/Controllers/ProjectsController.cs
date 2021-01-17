@@ -45,14 +45,14 @@ namespace DecadenceV3WebAPI.Controllers
         }
 
         // PUT api/<ProjectsController>/5
-        [HttpPut("{id}")]
+        [HttpPut]
         public void Put([FromBody] ProjectDto project)
         {
             _projectService.UpdateProject(project);
         }
 
         // DELETE api/<ProjectsController>/5
-        [HttpDelete("{id}")]
+        [HttpDelete]
         public void Delete(ProjectDto project)
         {
             _projectService.DeleteProject(project);

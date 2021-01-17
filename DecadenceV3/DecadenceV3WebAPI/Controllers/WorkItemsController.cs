@@ -45,14 +45,14 @@ namespace DecadenceV3WebAPI.Controllers
         }
 
         // PUT api/<WorkItemsController>/5
-        [HttpPut("{id}")]
+        [HttpPut]
         public void Put([FromBody] WorkItemDto workItem)
         {
             _workItemService.UpdateWorkItem(workItem);
         }
 
         // DELETE api/<WorkItemsController>/5
-        [HttpDelete("{id}")]
+        [HttpDelete]
         public void Delete(WorkItemDto workItem)
         {
             _workItemService.DeleteWorkItem(workItem);

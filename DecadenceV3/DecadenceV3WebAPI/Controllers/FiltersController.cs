@@ -45,7 +45,7 @@ namespace DecadenceV3WebAPI
         }
 
         // PUT api/<FiltersController>/5
-        [HttpPut("{id}")]
+        [HttpPut]
         public void Put([FromBody] FilterDto filter)
         {
             _filterService.UpdateFilter(filter);
