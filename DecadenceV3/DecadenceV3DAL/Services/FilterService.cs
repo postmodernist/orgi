@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
+using AutoMapper;
 using DecadenceV3BLL.DTOs;
 using DecadenceV3BLL.Interfaces.Services;
 using DecadenceV3BLL.ViewModels;
+using DecadenceV3DAL.Entities;
 using DecadenceV3DAL.Interfaces;
 using DecadenceV3DAL.UnitOfWork;
 
@@ -10,34 +12,38 @@ namespace DecadenceV3BLL.Services
     public class FilterService: IFilterService
     {
         private readonly IUnitOfWork unitOfWork;
-
-        public FilterService(AppDbContext context)
+        private readonly IMapper _mapper;
+        public FilterService(AppDbContext context, IMapper mapper)
         {
             unitOfWork = new UnitOfWork(context);
+            _mapper = mapper;
         }
-        public FilterViewModel GetFilterById(int id)
+        public FilterDto GetFilterById(int id)
         {
-            throw new System.NotImplementedException();
+            return _mapper.Map<FilterDto>(unitOfWork.FilterRepository.GetEntityById(id));
         }
 
         public IEnumerable<FilterDto> GetFilters()
         {
-            throw new System.NotImplementedException();
+            return _mapper.Map<IEnumerable<FilterDto>>(unitOfWork.FilterRepository.GetEntities());
         }
 
         public void AddFilter(FilterDto filter)
         {
-            throw new System.NotImplementedException();
+            var item = _mapper.Map<Filter>(filter);
+            unitOfWork.FilterRepository.Add(item);
         }
 
         public void UpdateFilter(FilterDto filter)
         {
-            throw new System.NotImplementedException();
+            var item = _mapper.Map<Filter>(filter);
+            unitOfWork.FilterRepository.Update(item);
         }
 
         public void DeleteFilter(FilterDto filter)
         {
-            throw new System.NotImplementedException();
+            var item = _mapper.Map<Filter>(filter);
+            unitOfWork.FilterRepository.Delete(item);
         }
     }
 }

@@ -6,7 +6,7 @@ namespace DecadenceV3BLL.Interfaces.Services
 {
     public interface IFilterService
     {
-        FilterViewModel GetFilterById(int id);
+        FilterDto GetFilterById(int id);
         IEnumerable<FilterDto> GetFilters();
         void AddFilter(FilterDto filter);
         void UpdateFilter(FilterDto filter);

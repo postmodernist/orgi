@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using DecadenceV3BLL.DTOs;
 using DecadenceV3BLL.Interfaces.Services;
 using DecadenceV3BLL.Services;
@@ -19,9 +20,9 @@ namespace DecadenceV3WebAPI.Controllers
     {
         private readonly ILabelService _labelService;
 
-        public LabelsController(AppDbContext context)
+        public LabelsController(AppDbContext context, IMapper mapper)
         {
-            _labelService = new LabelService(context);
+            _labelService = new LabelService(context , mapper);
         }
         // GET: api/<LabelsController>
         [HttpGet]

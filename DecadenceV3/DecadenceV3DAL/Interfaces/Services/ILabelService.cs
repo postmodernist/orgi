@@ -6,7 +6,7 @@ namespace DecadenceV3BLL.Interfaces.Services
 {
     public interface ILabelService
     {
-        LabelViewModel GetLabelById(int id);
+        LabelDto GetLabelById(int id);
         IEnumerable<LabelDto> GetLabels();
         void AddLabel(LabelDto label);
         void UpdateLabel(LabelDto label);

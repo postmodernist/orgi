@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
+using AutoMapper;
 using DecadenceV3BLL.DTOs;
 using DecadenceV3BLL.Interfaces.Services;
 using DecadenceV3BLL.ViewModels;
+using DecadenceV3DAL.Entities;
 using DecadenceV3DAL.Interfaces;
 using DecadenceV3DAL.UnitOfWork;
 
@@ -10,34 +12,38 @@ namespace DecadenceV3BLL.Services
     public class UserService: IUserService
     {
         private readonly IUnitOfWork unitOfWork;
-
-        public UserService(AppDbContext context)
+        private readonly IMapper _mapper;
+        public UserService(AppDbContext context, IMapper mapper)
         {
             unitOfWork = new UnitOfWork(context);
+            _mapper = mapper;
         }
-        public UserViewModel GetUserById(int id)
+        public UserDto GetUserById(int id)
         {
-            throw new System.NotImplementedException();
+            return _mapper.Map<UserDto>(unitOfWork.UserRepository.GetEntityById(id));
         }
 
-        public IEnumerable<UserViewModel> GetUsers()
+        public IEnumerable<UserDto> GetUsers()
         {
-            throw new System.NotImplementedException();
+            return _mapper.Map<IEnumerable<UserDto>>(unitOfWork.UserRepository.GetEntities());
         }
 
         public void AddUser(UserDto user)
         {
-            throw new System.NotImplementedException();
+            var item = _mapper.Map<User>(user);
+            unitOfWork.UserRepository.Add(item);
         }
 
         public void UpdateUser(UserDto user)
         {
-            throw new System.NotImplementedException();
+            var item = _mapper.Map<User>(user);
+            unitOfWork.UserRepository.Update(item);
         }
 
         public void DeleteUser(UserDto user)
         {
-            throw new System.NotImplementedException();
+            var item = _mapper.Map<User>(user);
+            unitOfWork.UserRepository.Delete(item);
         }
     }
 }

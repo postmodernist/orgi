@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
+using AutoMapper;
 using DecadenceV3BLL.DTOs;
 using DecadenceV3BLL.Interfaces.Services;
 using DecadenceV3BLL.ViewModels;
+using DecadenceV3DAL.Entities;
 using DecadenceV3DAL.Interfaces;
 using DecadenceV3DAL.UnitOfWork;
 
@@ -10,34 +12,38 @@ namespace DecadenceV3BLL.Services
     public class LabelService: ILabelService
     {
         private readonly IUnitOfWork unitOfWork;
-
-        public LabelService(AppDbContext context)
+        private readonly IMapper _mapper;
+        public LabelService(AppDbContext context, IMapper mapper)
         {
             unitOfWork = new UnitOfWork(context);
+            _mapper = mapper;
         }
-        public LabelViewModel GetLabelById(int id)
+        public LabelDto GetLabelById(int id)
         {
-            throw new System.NotImplementedException();
+            return _mapper.Map<LabelDto>(unitOfWork.LabelRepository.GetEntityById(id));
         }
 
         public IEnumerable<LabelDto> GetLabels()
         {
-            throw new System.NotImplementedException();
+            return _mapper.Map<IEnumerable<LabelDto>>(unitOfWork.LabelRepository.GetEntities());
         }
 
         public void AddLabel(LabelDto label)
         {
-            throw new System.NotImplementedException();
+            var item = _mapper.Map<Label>(label);
+            unitOfWork.LabelRepository.Add(item);
         }
 
         public void UpdateLabel(LabelDto label)
         {
-            throw new System.NotImplementedException();
+            var item = _mapper.Map<Label>(label);
+            unitOfWork.LabelRepository.Update(item);
         }
 
         public void DeleteLabel(LabelDto label)
         {
-            throw new System.NotImplementedException();
+            var item = _mapper.Map<Label>(label);
+            unitOfWork.LabelRepository.Delete(item);
         }
     }
 }

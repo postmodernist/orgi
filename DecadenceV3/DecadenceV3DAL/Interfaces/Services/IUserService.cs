@@ -6,8 +6,8 @@ namespace DecadenceV3BLL.Interfaces.Services
 {
     public interface IUserService
     {
-        UserViewModel GetUserById(int id);
-        IEnumerable<UserViewModel> GetUsers();
+        UserDto GetUserById(int id);
+        IEnumerable<UserDto> GetUsers();
         void AddUser(UserDto user);
         void UpdateUser(UserDto user);
         void DeleteUser(UserDto user);

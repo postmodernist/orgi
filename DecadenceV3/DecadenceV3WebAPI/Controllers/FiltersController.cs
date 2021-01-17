@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using DecadenceV3BLL.DTOs;
 using DecadenceV3BLL.Interfaces.Services;
 using DecadenceV3BLL.Services;
@@ -17,11 +18,11 @@ namespace DecadenceV3WebAPI
     [ApiController]
     public class FiltersController : ControllerBase
     {
-        private IFilterService _filterService;
+        private readonly IFilterService _filterService;
 
-        public FiltersController(AppDbContext context)
+        public FiltersController(AppDbContext context ,IMapper mapper)
         {
-            _filterService = new FilterService(context);
+            _filterService = new FilterService(context, mapper);
         }
         // GET: api/<FiltersController>
         [HttpGet]

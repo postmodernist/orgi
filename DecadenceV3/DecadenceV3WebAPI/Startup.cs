@@ -11,7 +11,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using DecadenceV3DAL.UnitOfWork;
+using DecadenceV3WebAPI.MapperProfiles;
 using Microsoft.EntityFrameworkCore;
 
 namespace DecadenceV3WebAPI
@@ -37,6 +39,7 @@ namespace DecadenceV3WebAPI
             string connection = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(connection));
+            services.AddAutoMapper(typeof(AutoProfile).Assembly);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using DecadenceV3BLL.DTOs;
 using DecadenceV3BLL.Interfaces.Services;
 using DecadenceV3BLL.Services;
@@ -19,9 +20,9 @@ namespace DecadenceV3WebAPI.Controllers
     {
         private readonly IProjectService _projectService;
 
-        public ProjectsController(AppDbContext context)
+        public ProjectsController(AppDbContext context, IMapper mapper)
         {
-            _projectService = new ProjectService(context);
+            _projectService = new ProjectService(context , mapper);
         }
         // GET: api/<ProjectsController>
         [HttpGet]

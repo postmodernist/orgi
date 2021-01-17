@@ -6,7 +6,7 @@ namespace DecadenceV3BLL.Interfaces.Services
 {
     public interface IWorkItemService
     {
-        WorkItemViewModel GetWokItemById(int id);
+        WorkItemDto GetWokItemById(int id);
         IEnumerable<WorkItemDto> GetWorkItems();
         void AddWorkItem(WorkItemDto workItem);
         void UpdateWorkItem(WorkItemDto workItem);

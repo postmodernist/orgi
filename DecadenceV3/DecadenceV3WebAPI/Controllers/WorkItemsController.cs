@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using DecadenceV3BLL.DTOs;
 using DecadenceV3BLL.Interfaces.Services;
 using DecadenceV3BLL.Services;
@@ -19,9 +20,9 @@ namespace DecadenceV3WebAPI.Controllers
     {
         private readonly IWorkItemService _workItemService;
 
-        public WorkItemsController(AppDbContext context)
+        public WorkItemsController(AppDbContext context, IMapper mapper)
         {
-            _workItemService = new WorkItemService(context);
+            _workItemService = new WorkItemService(context, mapper);
         }
         // GET: api/<WorkItemsController>
         [HttpGet]

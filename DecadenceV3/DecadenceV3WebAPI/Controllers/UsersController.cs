@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using DecadenceV3BLL.DTOs;
 using DecadenceV3BLL.Interfaces.Services;
 using DecadenceV3BLL.Services;
@@ -19,9 +20,9 @@ namespace DecadenceV3WebAPI.Controllers
     {
         private readonly IUserService _userService;
 
-        public UsersController(AppDbContext context)
+        public UsersController(AppDbContext context, IMapper mapper)
         {
-            _userService = new UserService(context);
+            _userService = new UserService(context, mapper);
         }
         // GET: api/<UsersController>
         [HttpGet]
