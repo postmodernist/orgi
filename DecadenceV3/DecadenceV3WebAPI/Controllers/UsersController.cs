@@ -26,14 +26,14 @@ namespace DecadenceV3WebAPI.Controllers
         }
         // GET: api/<UsersController>
         [HttpGet]
-        public IEnumerable<UserViewModel> Get()
+        public IEnumerable<UserDto> Get()
         {
             return _userService.GetUsers();
         }
 
         // GET api/<UsersController>/5
         [HttpGet("{id}")]
-        public UserViewModel Get(int id)
+        public UserDto Get(int id)
         {
             return _userService.GetUserById(id);
         }

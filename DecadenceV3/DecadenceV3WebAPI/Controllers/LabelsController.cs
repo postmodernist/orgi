@@ -33,7 +33,7 @@ namespace DecadenceV3WebAPI.Controllers
 
         // GET api/<LabelsController>/5
         [HttpGet("{id}")]
-        public LabelViewModel Get(int id)
+        public LabelDto Get(int id)
         {
             return _labelService.GetLabelById(id);
         }

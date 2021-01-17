@@ -33,7 +33,7 @@ namespace DecadenceV3WebAPI.Controllers
 
         // GET api/<WorkItemsController>/5
         [HttpGet("{id}")]
-        public WorkItemViewModel Get(int id)
+        public WorkItemDto Get(int id)
         {
             return _workItemService.GetWokItemById(id);
         }

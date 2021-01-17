@@ -33,7 +33,7 @@ namespace DecadenceV3WebAPI
 
         // GET api/<FiltersController>/5
         [HttpGet("{id}")]
-        public FilterViewModel Get(int id)
+        public FilterDto Get(int id)
         {
             return _filterService.GetFilterById(id);
         }
