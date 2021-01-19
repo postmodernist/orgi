@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using DecadenceV3BLL.DTOs;
 using DecadenceV3BLL.ViewModels;
 
@@ -6,10 +7,10 @@ namespace DecadenceV3BLL.Interfaces.Services
 {
     public interface IWorkItemService
     {
-        WorkItemDto GetWokItemById(int id);
-        IEnumerable<WorkItemDto> GetWorkItems();
-        void AddWorkItem(WorkItemDto workItem);
-        void UpdateWorkItem(WorkItemDto workItem);
-        void DeleteWorkItem(WorkItemDto workItem);
+        Task<WorkItemDto> GetWokItemById(int id);
+        Task<IEnumerable<WorkItemDto>> GetWorkItems();
+        Task AddWorkItem(WorkItemDto workItem);
+        Task UpdateWorkItem(WorkItemDto workItem);
+        Task DeleteWorkItem(WorkItemDto workItem);
     }
 }

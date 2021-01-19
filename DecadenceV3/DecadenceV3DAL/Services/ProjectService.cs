@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using AutoMapper;
 using System.Linq;
+using System.Threading.Tasks;
 using DecadenceV3BLL.DTOs;
 using DecadenceV3BLL.Interfaces.Services;
 using DecadenceV3BLL.ViewModels;
@@ -19,37 +20,37 @@ namespace DecadenceV3BLL.Services
             unitOfWork = new UnitOfWork(context);
             _mapper = mapper;
         }
-        public ProjectViewModel GetProjectById(int id)
+        public async Task<ProjectViewModel> GetProjectById(int id)
         {
-            var view = _mapper.Map<ProjectViewModel>(unitOfWork.ProjectRepository.GetEntityById(id));
-            var tasks = _mapper.Map<IEnumerable<WorkItemDto>>(unitOfWork.WorkItemRepository.GetEntities());
+            var view = _mapper.Map<ProjectViewModel>(await unitOfWork.ProjectRepository.GetEntityById(id));
+            var tasks = _mapper.Map<IEnumerable<WorkItemDto>>(await unitOfWork.WorkItemRepository.GetEntities());
             view.Tasks = from t in tasks
                          where t.ProjectId.Equals(view.Id)
                          select t;
             return view;
         }
 
-        public IEnumerable<ProjectDto> GetProjects()
+        public async Task<IEnumerable<ProjectDto>> GetProjects()
         {
-            return _mapper.Map<IEnumerable<ProjectDto>>(unitOfWork.ProjectRepository.GetEntities());
+            return _mapper.Map<IEnumerable<ProjectDto>>(await unitOfWork.ProjectRepository.GetEntities());
         }
 
-        public void AddProject(ProjectDto project)
+        public async Task AddProject(ProjectDto project)
         {
             var item = _mapper.Map<Project>(project);
-            unitOfWork.ProjectRepository.Add(item);
+            await unitOfWork.ProjectRepository.Add(item);
         }
 
-        public void UpdateProject(ProjectDto project)
+        public async Task UpdateProject(ProjectDto project)
         {
             var item = _mapper.Map<Project>(project);
-            unitOfWork.ProjectRepository.Update(item);
+            await unitOfWork.ProjectRepository.Update(item);
         }
 
-        public void DeleteProject(ProjectDto project)
+        public async Task DeleteProject(ProjectDto project)
         {
             var item = _mapper.Map<Project>(project);
-            unitOfWork.ProjectRepository.Delete(item);
+            await unitOfWork.ProjectRepository.Delete(item);
         }
     }
 }

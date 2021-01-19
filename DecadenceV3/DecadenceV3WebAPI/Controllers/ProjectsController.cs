@@ -26,37 +26,37 @@ namespace DecadenceV3WebAPI.Controllers
         }
         // GET: api/<ProjectsController>
         [HttpGet]
-        public IEnumerable<ProjectDto> Get()
+        public async Task<IEnumerable<ProjectDto>> Get()
         {
-            return _projectService.GetProjects();
+            return await _projectService.GetProjects();
         }
 
         // GET api/<ProjectsController>/5
         [HttpGet("{id}")]
-        public ProjectViewModel Get(int id)
+        public async Task<ProjectViewModel>Get(int id)
         {
-            return _projectService.GetProjectById(id);
+            return await _projectService.GetProjectById(id);
         }
 
         // POST api/<ProjectsController>
         [HttpPost]
-        public void Post([FromBody] ProjectDto project)
+        public async Task Post([FromBody] ProjectDto project)
         {
-            _projectService.AddProject(project);
+            await _projectService.AddProject(project);
         }
 
         // PUT api/<ProjectsController>/5
         [HttpPut]
-        public void Put([FromBody] ProjectDto project)
+        public async Task Put([FromBody] ProjectDto project)
         {
-            _projectService.UpdateProject(project);
+            await _projectService.UpdateProject(project);
         }
 
         // DELETE api/<ProjectsController>/5
         [HttpDelete]
-        public void Delete(ProjectDto project)
+        public async Task Delete(ProjectDto project)
         {
-            _projectService.DeleteProject(project);
+            await _projectService.DeleteProject(project);
         }
     }
 }

@@ -26,37 +26,37 @@ namespace DecadenceV3WebAPI.Controllers
         }
         // GET: api/<LabelsController>
         [HttpGet]
-        public IEnumerable<LabelDto> Get()
+        public async Task<IEnumerable<LabelDto>> Get()
         {
-            return _labelService.GetLabels();
+            return await _labelService.GetLabels();
         }
 
         // GET api/<LabelsController>/5
         [HttpGet("{id}")]
-        public LabelDto Get(int id)
+        public async Task<LabelDto> Get(int id)
         {
-            return _labelService.GetLabelById(id);
+            return await _labelService.GetLabelById(id);
         }
 
         // POST api/<LabelsController>
         [HttpPost]
-        public void Post([FromBody] LabelDto label)
+        public async Task Post([FromBody] LabelDto label)
         {
-            _labelService.AddLabel(label);
+            await _labelService.AddLabel(label);
         }
 
         // PUT api/<LabelsController>/5
         [HttpPut]
-        public void Put([FromBody] LabelDto label)
+        public async Task Put([FromBody] LabelDto label)
         {
-            _labelService.UpdateLabel(label);
+            await _labelService.UpdateLabel(label);
         }
 
         // DELETE api/<LabelsController>/5
         [HttpDelete]
-        public void Delete(LabelDto label)
+        public async Task Delete(LabelDto label)
         {
-            _labelService.DeleteLabel(label);
+            await _labelService.DeleteLabel(label);
         }
     }
 }

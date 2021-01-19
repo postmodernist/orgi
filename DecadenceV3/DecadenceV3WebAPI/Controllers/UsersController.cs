@@ -26,37 +26,37 @@ namespace DecadenceV3WebAPI.Controllers
         }
         // GET: api/<UsersController>
         [HttpGet]
-        public IEnumerable<UserDto> Get()
+        public async Task<IEnumerable<UserDto>> Get()
         {
-            return _userService.GetUsers();
+            return await _userService.GetUsers();
         }
 
         // GET api/<UsersController>/5
         [HttpGet("{id}")]
-        public UserDto Get(int id)
+        public async Task<UserDto> Get(int id)
         {
-            return _userService.GetUserById(id);
+            return await _userService.GetUserById(id);
         }
 
         // POST api/<UsersController>
         [HttpPost]
-        public void Post([FromBody] UserDto user)
+        public async Task Post([FromBody] UserDto user)
         {
-            _userService.AddUser(user);
+            await _userService.AddUser(user);
         }
 
         // PUT api/<UsersController>/5
         [HttpPut]
-        public void Put([FromBody] UserDto user)
+        public async Task Put([FromBody] UserDto user)
         {
-            _userService.UpdateUser(user);
+            await _userService.UpdateUser(user);
         }
 
         // DELETE api/<UsersController>/5
         [HttpDelete]
-        public void Delete(UserDto user)
+        public async Task Delete(UserDto user)
         {
-            _userService.DeleteUser(user);
+            await _userService.DeleteUser(user);
         }
     }
 }

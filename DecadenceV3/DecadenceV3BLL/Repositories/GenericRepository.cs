@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using DecadenceV3DAL.Entities;
 using DecadenceV3DAL.UnitOfWork;
 using Microsoft.EntityFrameworkCore;
@@ -16,32 +17,32 @@ namespace DecadenceV3DAL.Repositories
             _context = context;
             _entities = _context.Set<TEntity>();
         }
-        public void Add(TEntity entity)
+        public async Task Add(TEntity entity)
         {
-            _entities.Add(entity);
-            _context.SaveChanges();
+            await _entities.AddAsync(entity);
+            await _context.SaveChangesAsync();
         }
 
-        public TEntity GetEntityById(int id)
+        public async Task<TEntity> GetEntityById(int id)
         {
-            return _entities.Find(id);
+            return await _entities.FindAsync(id);
         }
 
-        public IEnumerable<TEntity> GetEntities()
+        public async Task<IEnumerable<TEntity>> GetEntities()
         {
-            return _entities.AsNoTracking().ToList();
+            return await _entities.AsNoTracking().ToListAsync();
         }
 
-        public void Update(TEntity entity)
+        public async Task Update(TEntity entity)
         {
             _entities.Update(entity);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
 
-        public void Delete(TEntity entity)
+        public async Task Delete(TEntity entity)
         {
             _entities.Remove(entity);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
     }
 }

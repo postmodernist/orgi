@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using AutoMapper;
 using DecadenceV3BLL.DTOs;
 using DecadenceV3BLL.Interfaces.Services;
@@ -18,32 +19,32 @@ namespace DecadenceV3BLL.Services
             unitOfWork = new UnitOfWork(context);
             _mapper = mapper;
         }
-        public LabelDto GetLabelById(int id)
+        public async Task<LabelDto> GetLabelById(int id)
         {
-            return _mapper.Map<LabelDto>(unitOfWork.LabelRepository.GetEntityById(id));
+            return _mapper.Map<LabelDto>(await unitOfWork.LabelRepository.GetEntityById(id));
         }
 
-        public IEnumerable<LabelDto> GetLabels()
+        public async Task<IEnumerable<LabelDto>> GetLabels()
         {
-            return _mapper.Map<IEnumerable<LabelDto>>(unitOfWork.LabelRepository.GetEntities());
+            return _mapper.Map<IEnumerable<LabelDto>>(await unitOfWork.LabelRepository.GetEntities());
         }
 
-        public void AddLabel(LabelDto label)
+        public async Task AddLabel(LabelDto label)
         {
             var item = _mapper.Map<Label>(label);
-            unitOfWork.LabelRepository.Add(item);
+            await unitOfWork.LabelRepository.Add(item);
         }
 
-        public void UpdateLabel(LabelDto label)
+        public async Task UpdateLabel(LabelDto label)
         {
             var item = _mapper.Map<Label>(label);
-            unitOfWork.LabelRepository.Update(item);
+            await unitOfWork.LabelRepository.Update(item);
         }
 
-        public void DeleteLabel(LabelDto label)
+        public async Task DeleteLabel(LabelDto label)
         {
             var item = _mapper.Map<Label>(label);
-            unitOfWork.LabelRepository.Delete(item);
+            await unitOfWork.LabelRepository.Delete(item);
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using DecadenceV3BLL.DTOs;
 using DecadenceV3BLL.ViewModels;
 
@@ -6,10 +7,10 @@ namespace DecadenceV3BLL.Interfaces.Services
 {
     public interface IUserService
     {
-        UserDto GetUserById(int id);
-        IEnumerable<UserDto> GetUsers();
-        void AddUser(UserDto user);
-        void UpdateUser(UserDto user);
-        void DeleteUser(UserDto user);
+        Task<UserDto> GetUserById(int id);
+        Task<IEnumerable<UserDto>> GetUsers();
+        Task AddUser(UserDto user);
+        Task UpdateUser(UserDto user);
+        Task DeleteUser(UserDto user);
     }
 }

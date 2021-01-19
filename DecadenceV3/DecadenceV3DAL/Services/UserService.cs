@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using AutoMapper;
 using DecadenceV3BLL.DTOs;
 using DecadenceV3BLL.Interfaces.Services;
@@ -18,32 +19,32 @@ namespace DecadenceV3BLL.Services
             unitOfWork = new UnitOfWork(context);
             _mapper = mapper;
         }
-        public UserDto GetUserById(int id)
+        public async Task<UserDto> GetUserById(int id)
         {
-            return _mapper.Map<UserDto>(unitOfWork.UserRepository.GetEntityById(id));
+            return _mapper.Map<UserDto>(await unitOfWork.UserRepository.GetEntityById(id));
         }
 
-        public IEnumerable<UserDto> GetUsers()
+        public async Task<IEnumerable<UserDto>> GetUsers()
         {
-            return _mapper.Map<IEnumerable<UserDto>>(unitOfWork.UserRepository.GetEntities());
+            return _mapper.Map<IEnumerable<UserDto>>(await unitOfWork.UserRepository.GetEntities());
         }
 
-        public void AddUser(UserDto user)
+        public async Task AddUser(UserDto user)
         {
             var item = _mapper.Map<User>(user);
-            unitOfWork.UserRepository.Add(item);
+            await unitOfWork.UserRepository.Add(item);
         }
 
-        public void UpdateUser(UserDto user)
+        public async Task UpdateUser(UserDto user)
         {
             var item = _mapper.Map<User>(user);
-            unitOfWork.UserRepository.Update(item);
+            await unitOfWork.UserRepository.Update(item);
         }
 
-        public void DeleteUser(UserDto user)
+        public async Task DeleteUser(UserDto user)
         {
             var item = _mapper.Map<User>(user);
-            unitOfWork.UserRepository.Delete(item);
+            await unitOfWork.UserRepository.Delete(item);
         }
     }
 }

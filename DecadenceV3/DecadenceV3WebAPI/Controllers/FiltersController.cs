@@ -26,37 +26,37 @@ namespace DecadenceV3WebAPI
         }
         // GET: api/<FiltersController>
         [HttpGet]
-        public IEnumerable<FilterDto> Get()
+        public async Task<IEnumerable<FilterDto>> Get()
         {
-            return _filterService.GetFilters();
+            return await _filterService.GetFilters();
         }
 
         // GET api/<FiltersController>/5
         [HttpGet("{id}")]
-        public FilterDto Get(int id)
+        public async Task<FilterDto> Get(int id)
         {
-            return _filterService.GetFilterById(id);
+            return await _filterService.GetFilterById(id);
         }
 
         // POST api/<FiltersController>
         [HttpPost]
-        public void Post([FromBody] FilterDto filter)
+        public async Task Post([FromBody] FilterDto filter)
         {
-            _filterService.AddFilter(filter);
+            await _filterService.AddFilter(filter);
         }
 
         // PUT api/<FiltersController>/5
         [HttpPut]
-        public void Put([FromBody] FilterDto filter)
+        public async Task Put([FromBody] FilterDto filter)
         {
-            _filterService.UpdateFilter(filter);
+            await _filterService.UpdateFilter(filter);
         }
 
         // DELETE api/<FiltersController>/5
         [HttpDelete]
-        public void Delete(FilterDto filter)
+        public async Task Delete(FilterDto filter)
         {
-            _filterService.DeleteFilter(filter);
+            await _filterService.DeleteFilter(filter);
         }
     }
 }

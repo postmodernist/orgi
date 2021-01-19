@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using AutoMapper;
 using DecadenceV3BLL.DTOs;
 using DecadenceV3BLL.Interfaces.Services;
@@ -18,32 +19,32 @@ namespace DecadenceV3BLL.Services
             unitOfWork = new UnitOfWork(context);
             _mapper = mapper;
         }
-        public WorkItemDto GetWokItemById(int id)
+        public async Task<WorkItemDto> GetWokItemById(int id)
         {
-            return _mapper.Map<WorkItemDto>(unitOfWork.WorkItemRepository.GetEntityById(id));
+            return _mapper.Map<WorkItemDto>(await unitOfWork.WorkItemRepository.GetEntityById(id));
         }
 
-        public IEnumerable<WorkItemDto> GetWorkItems()
+        public async Task<IEnumerable<WorkItemDto>> GetWorkItems()
         {
-            return _mapper.Map<IEnumerable<WorkItemDto>>(unitOfWork.WorkItemRepository.GetEntities());
+            return _mapper.Map<IEnumerable<WorkItemDto>>(await unitOfWork.WorkItemRepository.GetEntities());
         }
 
-        public void AddWorkItem(WorkItemDto workItem)
+        public async Task AddWorkItem(WorkItemDto workItem)
         {
             var item = _mapper.Map<WorkItem>(workItem);
-            unitOfWork.WorkItemRepository.Add(item);
+            await unitOfWork.WorkItemRepository.Add(item);
         }
 
-        public void UpdateWorkItem(WorkItemDto workItem)
+        public async Task UpdateWorkItem(WorkItemDto workItem)
         {
             var item = _mapper.Map<WorkItem>(workItem);
-            unitOfWork.WorkItemRepository.Update(item);
+            await  unitOfWork.WorkItemRepository.Update(item);
         }
 
-        public void DeleteWorkItem(WorkItemDto workItem)
+        public async Task DeleteWorkItem(WorkItemDto workItem)
         {
             var item = _mapper.Map<WorkItem>(workItem);
-            unitOfWork.WorkItemRepository.Delete(item);
+            await unitOfWork.WorkItemRepository.Delete(item);
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using AutoMapper;
 using DecadenceV3BLL.DTOs;
 using DecadenceV3BLL.Interfaces.Services;
@@ -18,32 +19,32 @@ namespace DecadenceV3BLL.Services
             unitOfWork = new UnitOfWork(context);
             _mapper = mapper;
         }
-        public FilterDto GetFilterById(int id)
+        public async Task<FilterDto> GetFilterById(int id)
         {
-            return _mapper.Map<FilterDto>(unitOfWork.FilterRepository.GetEntityById(id));
+            return _mapper.Map<FilterDto>(await unitOfWork.FilterRepository.GetEntityById(id));
         }
 
-        public IEnumerable<FilterDto> GetFilters()
+        public async Task <IEnumerable<FilterDto>> GetFilters()
         {
-            return _mapper.Map<IEnumerable<FilterDto>>(unitOfWork.FilterRepository.GetEntities());
+            return _mapper.Map<IEnumerable<FilterDto>>(await  unitOfWork.FilterRepository.GetEntities());
         }
 
-        public void AddFilter(FilterDto filter)
+        public async Task AddFilter(FilterDto filter)
         {
             var item = _mapper.Map<Filter>(filter);
-            unitOfWork.FilterRepository.Add(item);
+            await unitOfWork.FilterRepository.Add(item);
         }
 
-        public void UpdateFilter(FilterDto filter)
+        public async Task UpdateFilter(FilterDto filter)
         {
             var item = _mapper.Map<Filter>(filter);
-            unitOfWork.FilterRepository.Update(item);
+            await unitOfWork.FilterRepository.Update(item);
         }
 
-        public void DeleteFilter(FilterDto filter)
+        public async Task DeleteFilter(FilterDto filter)
         {
             var item = _mapper.Map<Filter>(filter);
-            unitOfWork.FilterRepository.Delete(item);
+            await unitOfWork.FilterRepository.Delete(item);
         }
     }
 }

@@ -26,37 +26,37 @@ namespace DecadenceV3WebAPI.Controllers
         }
         // GET: api/<WorkItemsController>
         [HttpGet]
-        public IEnumerable<WorkItemDto> Get()
+        public async Task<IEnumerable<WorkItemDto>> Get()
         {
-            return _workItemService.GetWorkItems();
+            return await _workItemService.GetWorkItems();
         }
 
         // GET api/<WorkItemsController>/5
         [HttpGet("{id}")]
-        public WorkItemDto Get(int id)
+        public async Task<WorkItemDto> Get(int id)
         {
-            return _workItemService.GetWokItemById(id);
+            return await _workItemService.GetWokItemById(id);
         }
 
         // POST api/<WorkItemsController>
         [HttpPost]
-        public void Post([FromBody] WorkItemDto workItem)
+        public async Task Post([FromBody] WorkItemDto workItem)
         {
-            _workItemService.AddWorkItem(workItem);
+            await _workItemService.AddWorkItem(workItem);
         }
 
         // PUT api/<WorkItemsController>/5
         [HttpPut]
-        public void Put([FromBody] WorkItemDto workItem)
+        public async Task Put([FromBody] WorkItemDto workItem)
         {
-            _workItemService.UpdateWorkItem(workItem);
+            await _workItemService.UpdateWorkItem(workItem);
         }
 
         // DELETE api/<WorkItemsController>/5
         [HttpDelete]
-        public void Delete(WorkItemDto workItem)
+        public async Task Delete(WorkItemDto workItem)
         {
-            _workItemService.DeleteWorkItem(workItem);
+            await _workItemService.DeleteWorkItem(workItem);
         }
     }
 }
